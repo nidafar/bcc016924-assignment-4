@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>assignment 4</title>
+
+    </head>
+    <body>
+        <script>
+          /*  4. Write a program to validate email address with following evaluation
+a. This string must contain @
+b. Ths string must contact chars
+c. The @ must have at least 1 char in front
+d. The string must contain .(dot) after @ and at least 1 char..*/
+var email = prompt("Enter your email i.d");
+var mailFormat = /^\w+([\.-]?\w+)([\.-]?\w+)*(\.\w{2,3})+$/;
+if (email.match(mailFormat)) {
+    alert("Email address is validated");
+
+}
+else {alert("please type a valid email address!");}
+
+        </script>
+        </body>
+</html>

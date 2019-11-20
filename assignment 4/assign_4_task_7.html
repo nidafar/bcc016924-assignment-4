@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>assignment 4</title>
+        <body>
+            <script>
+               /* You have a string “The quick brown fox jumps over the lazy dog”.
+Write a program to coumps nt the number of occurrences of the word “the”
+in given string.*/
+var text = " THe quick brown fox jumps over the lazy dog";
+var searchText = prompt('Enter the word which want to count');
+var textIndex = -1;
+var counter = 0;
+for (var a = 0; a < text.length; a++ ) {
+    textIndex = text.indexOf(searchText, textIndex + 1);
+    if (textIndex >= 0) {
+        counter++;
+    }
+    else{
+        break;
+    }
+    console.log("Index = " + textIndex);
+}
+if (counter == 0){
+    console.log("Not found");
+} else{
+    console.log("counter = " + counter);
+}
+            </script>
+        </body>
+    </head>
+</html>
